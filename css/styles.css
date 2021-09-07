@@ -1,0 +1,97 @@
+/*
+
+selector{
+    attribute: value;
+}
+
+3 selectors:
+-element name div. span, etc
+-class name .nameOfClas
+Id #nameOfId
+
+ID> . > element (who wins)
+
+*/
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #55B3C5;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+body{
+    font-size: 25px;
+    color: #4F545F;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset{
+    border: 2px dashed #dddddddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+legend{
+    font-size: 1.3em; /*em responsive design, it resizes proportionali, it depends*/
+    font-weight: 900;
+}
+
+label{
+    display: block; /*insted of br and right way*/
+}
+
+fieldset > span{
+    border: 1px solid #6278B0;
+    color: #42579C;
+    padding: 20px 40px;
+    display: block;
+    background: url('./../images/infoicon.png') no-repeat center left; /*images as part of a background (include image as part of an element)*/
+    background-position: 15px 15px;
+    /*text-align: center;*/
+}
+
+.formElement{
+    padding: 5px 10px;
+    width: 300px; /*not good for responsive design, its a fix feature, you can use % to be able to be more responsive (resize)*/
+    margin-bottom: 15px;
+}
+
+#cancelForm, #submitForm{
+    padding: 5px 15px;
+    text-align: center;
+    background-color: #D9534F;
+    font-size: 1.3em;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#submitForm{
+    background-color: #56C56F;
+}
+
+#submitForm:hover{
+    cursor: pointer;
+    background-color: tomato;
+}
+
+#cancelForm:hover{
+    cursor: pointer;
+    background-color: tomato;
+}
+
+.special{
+    width: 500px;
+}
+
+label[for="userPasswordConfirmation"]{
+    color: teal;
+}
+
